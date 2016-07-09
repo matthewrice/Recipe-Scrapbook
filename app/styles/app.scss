@@ -15,3 +15,66 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+.recipe-form{
+  border: 2px dotted grey;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.recipeForm-topRow{
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  // font-family: 'Playfair Display', serif;
+
+  .serving-input{
+    margin-left: 10px;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .radio-US{
+    margin-left: 15px;
+    top: -11px;
+  }
+
+  .radio-Metric{
+    top: -11px;
+    margin-right: 10px;
+  }
+
+  .adjust-recipe-button{
+    background: -webkit-linear-gradient(top, rgb(254,254,254), rgb(238,238,238));
+    background: -moz-linear-gradient(top, rgb(254,254,254), rgb(238,238,238));
+    background: linear-gradient(top, rgb(254,254,254), rgb(238,238,238));
+    margin-right: 30px;
+    font-size: 18px;
+  }
+}
+
+.recipeForm-bottomRow{
+  padding-left: 10px;
+  padding-bottom: 10px;
+  // font-size: 20px;
+  // font-family: 'Playfair Display', serif;
+
+  .check-icon{
+    font-size: 30px;
+    color: rgb(133,226,0);
+  }
+
+  .bottomRow-content{
+    margin-left: 10px;
+  }
+}
+
+.ingredients-list{
+  list-style: none;
+}
+
+// .ingredient{
+//   display: inline-block;
+//   font-size:
+// }
