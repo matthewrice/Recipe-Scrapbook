@@ -16,16 +16,24 @@ img {
   max-width: 100%;
 }
 
+.container-fluid{
+  background-image: url('../images/ingredients.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+
+}
+
 .recipe-form{
-  border: 2px dotted grey;
+  border: 1px dotted grey;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
 .recipeForm-topRow{
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   // font-family: 'Playfair Display', serif;
 
@@ -46,35 +54,172 @@ img {
   }
 
   .adjust-recipe-button{
-    background: -webkit-linear-gradient(top, rgb(254,254,254), rgb(238,238,238));
-    background: -moz-linear-gradient(top, rgb(254,254,254), rgb(238,238,238));
-    background: linear-gradient(top, rgb(254,254,254), rgb(238,238,238));
-    margin-right: 30px;
+    background: -webkit-linear-gradient(top, rgb(254,254,254), rgb(227,228,226));
+    background: -moz-linear-gradient(top, rgb(254,254,254), rgb(227,228,226));
+    background: linear-gradient(top, rgb(254,254,254), rgb(227,228,226));
+    margin-right: 70px;
     font-size: 18px;
   }
 }
 
 .recipeForm-bottomRow{
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-bottom: 20px;
+  padding-right: 80px;
   // font-size: 20px;
   // font-family: 'Playfair Display', serif;
 
-  .check-icon{
-    font-size: 30px;
-    color: rgb(133,226,0);
-  }
+  .border-box{
+    border: 1px dotted grey;
+    padding-bottom: 3px;
+    padding-left: 8px;
 
-  .bottomRow-content{
-    margin-left: 10px;
+    .check-icon{
+      font-size: 30px;
+      color: rgb(133,226,0);
+      // padding-top: 5px;
+    }
+
+    .bottomRow-content{
+      position: relative;
+      margin-left: 10px;
+      font-size: 18px;
+      top: -3px;
+    }
   }
+}
+
+.ingredients-list-column{
+  padding: 0;
 }
 
 .ingredients-list{
   list-style: none;
+  // padding: 0;
 }
 
-// .ingredient{
-//   display: inline-block;
-//   font-size:
-// }
+.ingredient{
+  font-size: 18px;
+}
+
+
+// user signup/login form
+.login-navbar{
+  color: white;
+  background-color: rgba(58,39,25,0.8);
+
+  .keys-to-the-kingdom{
+    font-style: italic;
+    font-size: 15px;
+    padding-top: 10px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .header-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+}
+
+.side-bar{
+  background-color: rgba(103,64,32,0.6);
+  height: 752px;
+
+}
+
+.signup{
+  background-color: rgba(214,88,6,0.5);
+  margin-top: 180px;
+  margin-bottom: 30px;
+  margin-left: 21%;
+  padding: 10px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  color: rgb(202,180,142);
+}
+
+.login{
+  background-color: rgba(214,88,6,0.5);
+  padding: 10px;
+  margin-left: 21%;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  color: rgb(202,180,142);
+}
+
+.signup,
+.login{
+  border-radius: 5px;
+}
+
+.signup-title,
+.login-title{
+  text-transform: uppercase;
+  color: rgb(58,39,25);
+  font-weight: bolder;
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.email-signup-label,
+.username-signup-label,
+.password-signup-label,
+.username-login-label,
+.password-login-label{
+  font-size: 25px;
+}
+
+.submit-signup,
+.submit-login{
+  background-color: rgba(58,39,25,0.8);
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+#email-signup,
+#username-signup,
+#password-signup,
+#username-login,
+#password-login{
+  width: 500px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255,255,255, 0.4);
+}
+*::-webkit-input-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+*:-moz-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+*::-moz-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+*:-ms-input-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+
+.email-signup-label{
+  margin-right: 100px;
+}
+.username-signup-label{
+  margin-right: 52px;
+}
+.password-signup-label{
+  margin-right: 62px;
+}
+.username-login-label{
+  margin-right: 52px;
+}
+.password-login-label{
+  margin-right: 62px;
+}

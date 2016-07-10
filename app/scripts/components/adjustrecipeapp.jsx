@@ -21,7 +21,7 @@ var RecipeForm = React.createClass({
 
     return (
       <div className="row">
-        <div className="col-md-offset-3 col-md-5 recipe-form">
+        <div className="col-md-offset-3 col-md-6 recipe-form">
           <div className="row">
             <form onSubmit={this.handleSubmit}>
               <div className="recipeForm-topRow">
@@ -34,19 +34,17 @@ var RecipeForm = React.createClass({
                 <label className="radio-inline radio-Metric">
                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
                 </label>
-
-
                 <button type="submit" className="btn btn-default adjust-recipe-button">Adjust Recipe</button>
-
-
                 <span>&#40;<a href="#">Help</a>&#41;</span>
               </div>
             </form>
           </div>
           <div className="row">
             <div className="recipeForm-bottomRow">
-              <i className="fa fa-check check-icon" aria-hidden="true"></i>
-              <span className="bottomRow-content">Ingredients list now reflect the new serving size.</span>
+              <div className="border-box">
+                <i className="fa fa-check check-icon" aria-hidden="true"></i>
+                <span className="bottomRow-content">Ingredients list now reflect the new serving size.</span>
+              </div>
             </div>
           </div>
         </div>
@@ -78,7 +76,7 @@ var RecipesList = React.createClass({
 
     return (
       <div className="row">
-        <div className="col-md-offset-3 col-md-5">
+        <div className="col-md-offset-4 col-md-6 ingredients-list-column">
           <ul className="ingredients-list">
             {ingredientsList}
           </ul>
