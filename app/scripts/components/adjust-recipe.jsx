@@ -129,6 +129,13 @@ var AdjustRecipe = React.createClass({
 
     return (
       <div>
+        {/*<nav className="col-xs-12 login-navbar">
+          <span className="col-xs-2 keys-to-the-kingdom">The kitchen is yours, chef!</span>
+          <span className="col-xs-offset-3 col-xs-2 header-title">batch maker</span>
+        </nav>
+
+        <div className="col-md-1 hidden-sm side-bar"></div>*/}
+
         <RecipeForm adjustRecipe={this.adjustRecipe}/>
         <RecipesList recipe={this.recipe} ratio={this.state.ratio}/>
       </div>

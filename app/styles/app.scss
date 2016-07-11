@@ -20,10 +20,232 @@ img {
   background-image: url('../images/ingredients.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 804px;
 
 }
 
+
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// USER LOGIN PAGE //////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.user-account-header{
+  background-color: rgba(58,39,25,0.6);
+  border-radius: 5px;
+  font-family: 'Shadows Into Light', cursive;
+  text-transform: uppercase;
+  margin-top: 90px;
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(255,255,255,0.7);
+
+  .user-account-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .website-description{
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 0;
+  }
+}
+
+.signup,
+.login{
+  border-radius: 5px;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: rgba(214,88,6,0.5);
+  color: rgb(202,180,142);
+
+}
+
+.signup{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.login{
+  padding: 10px;
+}
+
+.signup-title,
+.login-title{
+  text-transform: uppercase;
+  color: rgb(58,39,25);
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.email-signup-label,
+.username-signup-label,
+.password-signup-label,
+.username-login-label,
+.password-login-label,
+.submit-signup,
+.submit-login{
+  font-size: 25px;
+}
+
+.submit-signup,
+.submit-login{
+  background-color: rgba(58,39,25,0.8);
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+#email-signup,
+#username-signup,
+#password-signup,
+#username-login,
+#password-login{
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(236,225,201, 0.6);
+  color: rgba(58,39,25,0.6);
+  font-size: 20px;
+}
+*::-webkit-input-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+*:-moz-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+*::-moz-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+*:-ms-input-placeholder {
+  color: rgba(58,39,25,0.6);
+}
+
+.email-signup-label{
+  margin-right: 15%;
+}
+.username-signup-label{
+  margin-right: 8%;
+}
+.password-signup-label{
+  margin-right: 9.6%;
+}
+.username-login-label{
+  margin-right: 8%;
+}
+.password-login-label{
+  margin-right: 9.6%;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// NAV BARS ///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.heading-navbar{
+  color: white;
+  background-color: rgba(58,39,25,0.8);
+
+  .keys-to-the-kingdom{
+    font-style: italic;
+    font-size: 18px;
+    padding-top: 10px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .header-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+}
+
+.icons{
+  color: white;
+  font-size: 20px;
+  padding-right: 0;
+  // padding-left: 2%;
+  padding-top: 10px;
+
+  a{
+    text-decoration: none;
+    color: white;
+
+    :hover{
+      color: rgb(202,180,142);
+    }
+  }
+
+  .plus-icon{
+
+  }
+
+  .cog-icon{
+    padding-left: 20%;
+
+
+  }
+
+  .user-icon{
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 40em) {
+  .side-navbar {
+    display: none;
+  }
+}
+
+.side-navbar{
+  background-color: rgba(103,64,32,0.6);
+  height: 752px;
+  padding: 0;
+
+  .sidebar-links{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 18px;
+    padding-top: 90px;
+
+    a{
+      text-decoration: none;
+      color: rgb(202,180,142);
+
+      :hover{
+        color: white;
+      }
+    }
+  }
+}
+
+.my-recipes,
+.public-recipes,
+.popular-recipes,
+.my-favorite-recipes{
+  padding-bottom: 30px;
+}
+
+.line{
+  border-top: 3px solid rgb(58,39,25);
+  width: 40%;
+  padding-bottom: 30px;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// ADJUST RECIPE FORM /////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 .recipe-form{
   border: 1px dotted grey;
   margin-bottom: 20px;
@@ -100,126 +322,4 @@ img {
 
 .ingredient{
   font-size: 18px;
-}
-
-
-// user signup/login form
-.login-navbar{
-  color: white;
-  background-color: rgba(58,39,25,0.8);
-
-  .keys-to-the-kingdom{
-    font-style: italic;
-    font-size: 15px;
-    padding-top: 10px;
-    font-family: 'Shadows Into Light', cursive;
-  }
-
-  .header-title{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: 'Shadows Into Light', cursive;
-  }
-}
-
-.side-bar{
-  background-color: rgba(103,64,32,0.6);
-  height: 752px;
-
-}
-
-.signup{
-  background-color: rgba(214,88,6,0.5);
-  margin-top: 180px;
-  margin-bottom: 30px;
-  margin-left: 21%;
-  padding: 10px;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 20px;
-  color: rgb(202,180,142);
-}
-
-.login{
-  background-color: rgba(214,88,6,0.5);
-  padding: 10px;
-  margin-left: 21%;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 20px;
-  color: rgb(202,180,142);
-}
-
-.signup,
-.login{
-  border-radius: 5px;
-}
-
-.signup-title,
-.login-title{
-  text-transform: uppercase;
-  color: rgb(58,39,25);
-  font-weight: bolder;
-  font-family: 'Shadows Into Light', cursive;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.email-signup-label,
-.username-signup-label,
-.password-signup-label,
-.username-login-label,
-.password-login-label{
-  font-size: 25px;
-}
-
-.submit-signup,
-.submit-login{
-  background-color: rgba(58,39,25,0.8);
-  border: none;
-  border-radius: 5px;
-  width: 15%;
-  margin-bottom: 10px;
-}
-
-#email-signup,
-#username-signup,
-#password-signup,
-#username-login,
-#password-login{
-  width: 500px;
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
-  margin-bottom: 10px;
-  background-color: rgba(255,255,255, 0.4);
-}
-*::-webkit-input-placeholder {
-  color: rgba(58,39,25,0.6);
-}
-*:-moz-placeholder {
-  color: rgba(58,39,25,0.6);
-}
-*::-moz-placeholder {
-  color: rgba(58,39,25,0.6);
-}
-*:-ms-input-placeholder {
-  color: rgba(58,39,25,0.6);
-}
-
-.email-signup-label{
-  margin-right: 100px;
-}
-.username-signup-label{
-  margin-right: 52px;
-}
-.password-signup-label{
-  margin-right: 62px;
-}
-.username-login-label{
-  margin-right: 52px;
-}
-.password-login-label{
-  margin-right: 62px;
 }
