@@ -5770,17 +5770,21 @@ img {
   max-width: 100%; }
 
 .container-fluid {
+  padding: 0; }
+
+.signup-login-background {
   background-image: url("../images/ingredients.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 804px; }
 
 .user-account-header {
-  background-color: rgba(58, 39, 25, 0.6);
+  background-color: rgba(58, 39, 25, 0.8);
   border-radius: 5px;
   font-family: 'Shadows Into Light', cursive;
   text-transform: uppercase;
-  margin-top: 90px;
+  margin-top: 180px;
+  margin-bottom: 30px;
   text-align: center;
   padding-top: 5px;
   color: rgba(255, 255, 255, 0.7); }
@@ -5797,17 +5801,16 @@ img {
 .login {
   border-radius: 5px;
   font-family: 'Shadows Into Light', cursive;
-  background-color: rgba(214, 88, 6, 0.5);
-  color: #cab48e; }
-
-.signup {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background-color: rgba(214, 88, 6, 0.8);
+  color: #cab48e;
   padding: 10px;
   font-size: 20px; }
-
-.login {
-  padding: 10px; }
+  .signup a,
+  .login a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    text-align: center; }
 
 .signup-title,
 .login-title {
@@ -5833,7 +5836,8 @@ img {
   border: none;
   border-radius: 5px;
   width: 15%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: 42%; }
 
 #email-signup,
 #username-signup,
@@ -5878,7 +5882,7 @@ img {
 
 .heading-navbar {
   color: white;
-  background-color: rgba(58, 39, 25, 0.8); }
+  background-color: rgba(31, 26, 23, 0.8); }
   .heading-navbar .keys-to-the-kingdom {
     font-style: italic;
     font-size: 18px;
@@ -5901,7 +5905,7 @@ img {
     text-decoration: none;
     color: white; }
     .icons a :hover {
-      color: #cab48e; }
+      color: #bdb29e; }
   .icons .cog-icon {
     padding-left: 20%; }
   .icons .user-icon {
@@ -5911,19 +5915,22 @@ img {
   .side-navbar {
     display: none; } }
 .side-navbar {
-  background-color: rgba(103, 64, 32, 0.6);
-  height: 752px;
+  background-color: rgba(189, 178, 158, 0.6);
+  height: 758px;
   padding: 0; }
   .side-navbar .sidebar-links {
     list-style: none;
-    padding: 0;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-size: 18px;
-    padding-top: 90px; }
+    text-overflow: clip;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 40px; }
     .side-navbar .sidebar-links a {
       text-decoration: none;
-      color: #cab48e; }
+      color: #1f1a17; }
       .side-navbar .sidebar-links a :hover {
         color: white; }
 
@@ -5934,9 +5941,45 @@ img {
   padding-bottom: 30px; }
 
 .line {
-  border-top: 3px solid #3a2719;
-  width: 40%;
+  border-top: 2px solid #1f1a17;
+  width: 100%;
   padding-bottom: 30px; }
+
+.user-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/recipe-cards.jpg"); }
+
+.scrapbook-lists {
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #1f1a17;
+  background-color: rgba(189, 178, 158, 0.3);
+  border-radius: 5px; }
+  .scrapbook-lists .scrapbook-row .divider-line {
+    display: inline-block;
+    border-bottom: 1px solid #1f1a17;
+    margin-bottom: 4px;
+    margin-left: 1.4%;
+    margin-right: 1.4%; }
+  .scrapbook-lists .scrapbook-row .my-recipes-line {
+    width: 82%; }
+  .scrapbook-lists .scrapbook-row .public-recipes-line {
+    width: 79.5%; }
+  .scrapbook-lists .scrapbook-row .popular-recipes-line {
+    width: 78.4%; }
+  .scrapbook-lists .scrapbook-row .favorite-recipes-line {
+    width: 75.6%; }
+  .scrapbook-lists .scrapbook-row .my-pantry-line {
+    width: 83.3%; }
+  .scrapbook-lists .scrapbook-row a {
+    text-decoration: none;
+    color: #1f1a17; }
+    .scrapbook-lists .scrapbook-row a :hover {
+      color: white; }
 
 .recipe-form {
   border: 1px dotted grey;
