@@ -1,14 +1,17 @@
-var $ = require('jquery');
+var $ = window.jQuery = require('jquery');
 var Backbone = require('backbone');
 require('./router');
-// var User = require('./models/user-account').User;
-
-// var $ = window.jQuery = require('jquery');
 
 /*
- * Provided needed headers for parse server
+ * Needed headers for parse server
  */
 
+ $.ajaxSetup({
+   beforeSend: function(xhr){
+     xhr.setRequestHeader("X-Parse-Application-Id", "tiygvl");
+     xhr.setRequestHeader("X-Parse-REST-API-Key", "slumber");
+   }
+ });
 
 $(function(){
   Backbone.history.start();
