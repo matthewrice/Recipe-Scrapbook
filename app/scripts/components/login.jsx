@@ -21,7 +21,8 @@ var LogIn = React.createClass({
         router.navigate('recipelist', {trigger: true})
       },
       error: function(user, error){
-        console.log('error: ', error);
+        alert('Either the username or password you entered was incorrect.  Please try again.');
+        console.log('Check error message: ', error);
       }
     });
   },

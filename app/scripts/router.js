@@ -8,6 +8,7 @@ var SignUp = require('./components/signup.jsx');
 var LogIn = require('./components/login.jsx');
 var NavBars = require('./components/nav-bars.jsx');
 var RecipeList = require('./components/recipe-list.jsx');
+var NewRecipe = require('./components/new-recipe.jsx');
 // var User = require('./models/user').User;
 
 
@@ -16,21 +17,9 @@ var Router = Backbone.Router.extend({
     '': 'signup',
     'signup': 'signup',
     'login': 'login',
-    'recipelist': 'recipeList'
+    'recipelist': 'recipeList',
+    'newrecipe': 'newRecipe'
   },
-  // initialize: function(){
-  //
-  //   ReactDOM.render(
-  //     React.createElement(NavBars),
-  //     document.getElementById('app')
-  //   );
-  //
-  //   ReactDOM.render(
-  //     React.createElement(AdjustRecipe),
-  //     document.getElementById('app')
-  //   );
-  //
-  // },
   signup: function(){
     var self = this;
     ReactDOM.render(
@@ -50,7 +39,14 @@ var Router = Backbone.Router.extend({
     ReactDOM.render(
       React.createElement(RecipeList, {router: self}),
       document.getElementById('app')
-    )
+    );
+  },
+  newRecipe: function(){
+    var self = this;
+    ReactDOM.render(
+      React.createElement(NewRecipe, {router: self}),
+      document.getElementById('app')
+    );
   }
 });
 

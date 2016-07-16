@@ -1,5 +1,5 @@
 var React = require('react');
-var RecipeModel = require('../models/recipe');
+var RecipeModel = require('../models/recipe').RecipeModel;
 // var Fraction = require('fractional').Fraction
 
 

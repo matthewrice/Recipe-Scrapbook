@@ -1,8 +1,23 @@
 var Backbone = require('backbone');
 
+
 var RecipeModel = Backbone.Model.extend({
-  urlRoot: "https://tiny-parse-server.herokuapp.com/classes/Rice"
+  idAttribute: 'objectId',
+  urlRoot: "https://tiny-parse-server.herokuapp.com/classes/RiceRecipes"
 });
 
 
-module.exports = RecipeModel;
+var RecipeCollection = Backbone.Collection.extend({
+  model: RecipeModel,
+  url: "https://tiny-parse-server.herokuapp.com/classes/RiceRecipes",
+  parse: function(serverResponse){
+    return serverResponse.results;
+  }
+});
+
+
+module.exports = {
+  // 'IngredientCollection': IngredientCollection,
+  'RecipeModel': RecipeModel,
+  'RecipeCollection': RecipeCollection
+};

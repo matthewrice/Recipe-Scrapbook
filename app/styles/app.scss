@@ -151,7 +151,7 @@ img {
 ////////////////////////////////////////////////////////////////////////////////
 .heading-navbar{
   color: white;
-  background-color: rgba(31,26,23,0.8);
+  background-color: rgb(105,103,107);
 
   .keys-to-the-kingdom{
     font-style: italic;
@@ -208,7 +208,9 @@ img {
 }
 
 .side-navbar{
-  background-color: rgba(189,178,158,0.6);
+  position: fixed;
+  margin-top: 48px;;
+  background-color: rgb(189,178,158);
   height: 758px;
   padding: 0;
 
@@ -226,7 +228,7 @@ img {
 
     a{
       text-decoration: none;
-      color: rgb(31,26,23);
+      color: rgb(105,103,107);
 
       :hover{
         color: white;
@@ -239,13 +241,13 @@ img {
 .public-recipes,
 .popular-recipes,
 .my-favorite-recipes{
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .line{
-  border-top: 2px solid rgb(31,26,23);
+  border-top: 2px solid rgb(105,103,107);
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 
@@ -256,6 +258,9 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../images/recipe-cards.jpg');
+  height: 758px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .scrapbook-lists{
@@ -264,19 +269,15 @@ img {
   padding-bottom: 10px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  color: rgb(31,26,23);
+  color: rgb(105,103,107);
   background-color: rgba(189,178,158,0.3);
   border-radius: 5px;
 
   .scrapbook-row{
 
-    .title{
-
-    }
-
     .divider-line{
       display: inline-block;
-      border-bottom: 1px solid rgb(31,26,23);
+      border-bottom: 1px solid rgb(105,103,107);
       margin-bottom: 4px;
       margin-left: 1.4%;
       margin-right: 1.4%;
@@ -304,7 +305,7 @@ img {
 
     a{
       text-decoration: none;
-      color: rgb(31,26,23);
+      color: rgb(105,103,107);
 
       :hover{
         color: white;
@@ -313,8 +314,20 @@ img {
   }
 }
 
+
 ////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////// ADJUST RECIPE FORM /////////////////////////////
+/////////////////////////////// NEW RECIPE FORM ////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.new-recipe-form{
+  margin-top: 100px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.basic-info
+
+
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////// ADJUST RECIPE SERVING SIZE FORM ///////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 .recipe-form{
   border: 1px dotted grey;

@@ -11,7 +11,6 @@ var SignUp = React.createClass({
     var password = $('#password-signup').val();
     var router = this.props.router;
 
-
     var newUser = new User();
     newUser.set({'email': email, 'username': username, 'password': password});
     console.log('New user created!!!: ', newUser);

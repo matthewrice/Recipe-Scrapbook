@@ -7,7 +7,7 @@ var NavBars = React.createClass({
     return (
       <div>
 
-          <nav className="col-xs-12 heading-navbar">
+          <nav className="heading-navbar navbar navbar-default navbar-fixed-top">
             <span className="col-xs-2 keys-to-the-kingdom">The kitchen is yours, chef!</span>
             <span className="col-xs-offset-3 col-xs-2 header-title">batch maker</span>
             <span className="col-xs-offset-4 col-xs-1 icons">
